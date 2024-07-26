@@ -14,7 +14,7 @@ const Pantallaincial = ({navigation}) =>{
       <Button
         mode="contained"
         onPress={() => navigation.navigate('login')}>
-        Inicia Sesion
+        BUSCA QUIEN TE PISE
       </Button>
 
       <Button
