@@ -15,7 +15,7 @@ export default function Pantallalogin({ navigation }) {
   return (
     <View style={styles.container}>
       <BackButton/>
-      <Text style={styles.title}>Login</Text>
+      <Text style={styles.title}>Chupenmela</Text>
       <TextInput
         style={styles.input}
         placeholder="Email"
