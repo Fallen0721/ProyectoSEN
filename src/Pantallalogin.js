@@ -1,6 +1,7 @@
 import React from 'react';
 import BackButton from './components/BackButton';
-import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import { View, Text, TextInput, StyleSheet } from 'react-native';
+import Button from './components/Button';
 
 export default function Pantallalogin({ navigation }) {
   const [email, setEmail] = React.useState('');
@@ -29,8 +30,17 @@ export default function Pantallalogin({ navigation }) {
         value={password}
         onChangeText={setPassword}
       />
-      <Button title="Login" onPress={() => navigation.navigate('Main')} />
-      <Button title="Register" onPress={() => navigation.navigate('Registros')} />
+      <Button
+        mode="outlined"
+        onPress={() => navigation.navigate('Main')}>
+          Iniciar Sesion
+      </Button>
+
+      <Button
+        mode="outlined"
+        onPress={() => navigation.navigate('Registros')}>
+          Registrarse
+      </Button>
     </View>
   );
 }

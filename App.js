@@ -6,6 +6,7 @@ import Pantallaincial from './src/Pantallaincial';
 import Pantallalogin from './src/Pantallalogin';
 import Pantallaregistro from './src/Pantallaregistro';
 import MainScreen from './src/Mainscreen';
+import NotificationSettings from './src/NotificationSettings';
 import EnergyCalculation from './src/EnergyCalculation';
 
 const Stack = createStackNavigator();
@@ -21,6 +22,8 @@ const App = () => {
         <Stack.Screen name="login" component={Pantallalogin} />
         <Stack.Screen name="Main" component={MainScreen} />
         <Stack.Screen name="EnergyCalculation" component={EnergyCalculation} />
+        <Stack.Screen name="NotificationSettings" component={NotificationSettings}/>
+
       </Stack.Navigator>
     </NavigationContainer>
   );

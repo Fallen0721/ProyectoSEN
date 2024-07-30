@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
 });
 
-// Exportar el componente al final del archivo
+
 export default BackButton;
 
 
