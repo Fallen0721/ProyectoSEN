@@ -124,7 +124,7 @@ async function registerForPushNotificationsAsync() {
       token = `${e}`;
     }
   } else {
-    alert('Must use physical device for Push Notifications');
+    alert('Must use physical device for Push Notificatios');
   }
 
   return token;
