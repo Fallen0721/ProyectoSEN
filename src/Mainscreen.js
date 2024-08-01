@@ -17,6 +17,9 @@ export default function MainScreen({ navigation }) {
         title="Estadísticas de Consumo"
         onPress={() => navigation.navigate('ConsumptionStatistics')}
       />
+      <Button
+        title="iagpt"
+        onPress={() => navigation.navigate('iagpt')}/>
     </View>
   );
 }
