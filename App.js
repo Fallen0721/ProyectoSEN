@@ -8,6 +8,7 @@ import Pantallaregistro from './src/Pantallaregistro';
 import MainScreen from './src/Mainscreen';
 import NotificationSettings from './src/NotificationSettings';
 import EnergyCalculation from './src/EnergyCalculation';
+import ConsumptionStatistics from './src/ConsumptionStatistics';
 
 const Stack = createStackNavigator();
 
@@ -23,7 +24,7 @@ const App = () => {
         <Stack.Screen name="Main" component={MainScreen} />
         <Stack.Screen name="EnergyCalculation" component={EnergyCalculation} />
         <Stack.Screen name="NotificationSettings" component={NotificationSettings}/>
-
+        <Stack.Screen name="ConsumptionStatistics" component={ConsumptionStatistics}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
