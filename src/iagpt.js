@@ -28,9 +28,9 @@ const iagpt = () => {
                     style={{ flex: 1, borderWidth: 1, padding: 10 }}
                     value={inputText}
                     onChangeText={setInputText}
-                    placeholder="Type a message..."
+                    placeholder="Escribe un Mensaje..."
                 />
-                <Button title="Send" onPress={handleSend} />
+                <Button title="Enviar" onPress={handleSend} />
             </View>
         </View>
     );
