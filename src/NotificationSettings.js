@@ -13,6 +13,7 @@ Notifications.setNotificationHandler({
 });
 
 const NotificationSettings = () => {
+  
   useEffect(() => {
     // Verificar si la aplicación se está ejecutando en un dispositivo móvil
     if (Device.isDevice) {
@@ -63,6 +64,7 @@ const NotificationSettings = () => {
 
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <BackButton goBack={navigation.goBack} />
       <Text>Configuración de Notificaciones</Text>
       <Button title="Enviar Notificación" onPress={handleSendNotification} />
     </View>

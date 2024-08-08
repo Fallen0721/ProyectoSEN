@@ -1,7 +1,8 @@
 import React from 'react';
+import BackButton from './components/BackButton';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
-const ConsumptionStatistics = () => {
+export default function ConsumptionStatistics({navigation}) {
     
     const data = [
         { date: '2024-01-01', consumption: 100 },
@@ -11,7 +12,9 @@ const ConsumptionStatistics = () => {
     ];
 
     return (
+        
         <div>
+            <BackButton goBack={navigation.goBack} />
             <h1>Estadísticas de consumo de Energía</h1>
             <LineChart width={800} height={400} data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
@@ -25,4 +28,3 @@ const ConsumptionStatistics = () => {
     );
 };
 
-export default ConsumptionStatistics;

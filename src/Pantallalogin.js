@@ -15,7 +15,7 @@ export default function Pantallalogin({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <BackButton/>
+      <BackButton goBack={navigation.goBack} />
       <Text style={styles.title}>Chupenmela</Text>
       <TextInput
         style={styles.input}

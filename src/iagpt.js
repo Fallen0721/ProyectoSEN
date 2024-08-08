@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import BackButton from './components/BackButton';	
 import { View, TextInput, Button, FlatList, Text } from 'react-native';
 
-const iagpt = () => {
+export default function iagpt ({navigation}) {
     const [messages, setMessages] = useState([]);
     const [inputText, setInputText] = useState('');
 
@@ -36,4 +37,3 @@ const iagpt = () => {
     );
 };
 
-export default iagpt;

@@ -28,7 +28,8 @@ export default function EnergyCalculation({ navigation }) {
 
   return (
     <ScrollView style={styles.container}>
-      <BackButton />
+
+      <BackButton goBack={navigation.goBack} />
       <Text style={styles.title}>Calcular Consumo de Energía</Text>
       <Text style={styles.subtitle}>Ingrese la cantidad de aparatos:</Text>
       
